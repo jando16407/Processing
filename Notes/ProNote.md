@@ -1,9 +1,11 @@
 <a name="top"></a>
 # Processing Notes
 
-### [Processing Basics](#basics)
-### [Function](#function)
-### [Color](#color)
+[Processing Basics](#basics)
+
+[Function](#function)
+
+[Color](#color)
 
 
 <a name="basics"></a>
