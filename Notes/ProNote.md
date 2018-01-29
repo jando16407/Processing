@@ -109,6 +109,8 @@ rgb: int rgb in hexadecial
 
 gray: float a value between black adn white (0 = black, 255 = white)
 
+Return type: void
+
 ![Color1](./images/color1.png) stroke(153); rect(30, 20, 55, 55);
 
 Syntax:
@@ -130,3 +132,83 @@ v2: float green or saturation value
 v3: float blue or brightness value
 
 ![Color2](./images/color2.png) stroke(204, 102, 0); rect(30, 20, 55, 55);
+
+
+###### color inside of a shape
+
+Syntax:
+
+	fill(rgb);
+	fill(gray);
+
+rgb: int rgb in hexadecial
+
+gray: float a value between black adn white (0 = black, 255 = white)
+
+Return type: void
+
+![Color3](./images/color3.png) fill(153); rect(30, 20, 55, 55);
+
+Syntax:
+
+	fill(rgb, alpha);
+	fill(gray, alpha);
+
+alpha: float opacity of the outline
+
+Syntax:
+
+	fill(v1, v2, v3);
+	fill(v1, v2, v3, alpha);
+
+v1: float red or hue value
+
+v2: float green or saturation value
+
+v3: float blue or brightness value
+
+![Color4](./images/color4.png) fill(204, 102, 0); rect(30, 20, 55, 55);
+
+
+###### Background color
+
+Syntax:
+
+	background(rgb);
+	background(gray);
+
+rgb: int rgb in hexadecial
+
+gray: float a value between black adn white (0 = black, 255 = white)
+
+Return type: void
+
+![Color5](./images/color5.png) background(51);
+
+Syntax:
+
+	background(rgb, alpha);
+	background(gray, alpha);
+
+alpha: float opacity of the outline
+
+Syntax:
+
+	background(v1, v2, v3);
+	background(v1, v2, v3, alpha);
+
+v1: float red or hue value
+
+v2: float green or saturation value
+
+v3: float blue or brightness value
+
+![Color6](./images/color6.png) background(255, 204, 0);
+
+Syntax:
+
+	background(image);
+
+image: PImage for the background (must be the same size as the sketch window)
+
+![Color7](./images/color7.png) PImage img; img = loadImage("laDefence.jpg"); background(img);
