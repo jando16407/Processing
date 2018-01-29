@@ -5,9 +5,9 @@
 ### [Function](#function)
 
 
-<a name="basics">
+<a name="basics"></a>
+
 ## Processing Basics
-</a>
 
 Processing uses functions to create visuals.
 
@@ -27,9 +27,9 @@ Anything inside of stroke.
 
 * To color a shape, call color function before the defining the shape.
 
-<a name="function">
+<a name="function"></a>
+
 ## Function
-</a>
 
 ###### Rectangle
 
