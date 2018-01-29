@@ -21,7 +21,7 @@ Processing uses functions to create visuals.
 
 ### Terminology
 
-###### Stroke
+##### Stroke
 
 Outline of a shape
 stroke can set the color or set the with of the line.
@@ -34,7 +34,7 @@ weight: float the weight of the stroke
 
 Return type: void
 
-###### Fill
+##### Fill
 
 Anything inside of stroke.
 
@@ -74,7 +74,7 @@ Syntax:
 ## Shape
 [Top](#top)
 
-###### Rectangle
+##### Rectangle
 
 Syntax: 
 
@@ -115,7 +115,7 @@ bl: float radius for bottom-left
 
 ![Rectangle3](./images/rect3.png) rect(30, 20, 55, 55, 3, 6, 12, 18);
 
-###### Ellipse
+##### Ellipse
 
 Syntax:
 
@@ -134,7 +134,7 @@ Return type: void
 ![Ellipse](./images/ellipse1.png) ellipse(56, 46, 55, 55);
 
 
-###### line
+##### line
 
 Syntax:
 
@@ -166,7 +166,7 @@ stroke(255); line(85, 75, 30, 75);
 ## Function 
 [Top](#top)
 
-###### SelectInput
+##### SelectInput
 
 It lets user to open a new window and browse the file to select a file to use.
 
@@ -199,7 +199,7 @@ Return type: void
 
 
 
-###### loadStrings
+##### loadStrings
 
 It reads the contents of a file and creates a string array of individual lines in the file.
 
@@ -220,7 +220,7 @@ filename: string name of the file or URL
 
 Return type: String()
 
-###### split
+##### split
 
 This function breaks a string into pieces by the given character or string as a delimiter.
 
@@ -246,7 +246,7 @@ Return type: string[]
 ## Color
 [Top](#top)
 
-###### Outline color
+##### Outline color
 
 Syntax:
 
@@ -282,7 +282,7 @@ v3: float blue or brightness value
 ![Color2](./images/color2.png) stroke(204, 102, 0); rect(30, 20, 55, 55);
 
 
-###### color inside of a shape
+##### color inside of a shape
 
 Syntax:
 
@@ -318,7 +318,7 @@ v3: float blue or brightness value
 ![Color4](./images/color4.png) fill(204, 102, 0); rect(30, 20, 55, 55);
 
 
-###### Background color
+##### Background color
 
 Syntax:
 
