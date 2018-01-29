@@ -35,7 +35,7 @@ d: float height
 
 Return type: void
 
-![Rectangle](./rect1.png) rect(30, 20, 55, 55);
+![Rectangle](./images/rect1.png) rect(30, 20, 55, 55);
 
 
 Syntax: 
@@ -44,7 +44,7 @@ Syntax:
 
 r: float radii for all corners
 
-![Rectangle2](./rect2.png) rect(30, 20, 55, 55, 7);
+![Rectangle2](./images/rect2.png) rect(30, 20, 55, 55, 7);
 
 Syntax:
 
@@ -58,7 +58,7 @@ br: float radius for bottom-right
 
 bl: float radius for bottom-left
 
-![Rectangle3](./rect3.png) rect(30, 20, 55, 55, 3, 6, 12, 18);
+![Rectangle3](./images/rect3.png) rect(30, 20, 55, 55, 3, 6, 12, 18);
 
 ###### Ellipse
 
@@ -76,4 +76,4 @@ d: float height (diameter)
 
 Return type: void
 
-![Ellipse](./ellipse1.png) ellipse(56, 46, 55, 55);
+![Ellipse](./images/ellipse1.png) ellipse(56, 46, 55, 55);
