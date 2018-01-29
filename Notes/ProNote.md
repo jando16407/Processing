@@ -3,9 +3,13 @@
 
 [Processing Basics](#basics)
 
+[Shape](#shape)
+
 [Function](#function)
 
 [Color](#color)
+
+[Array](#array)
 
 
 <a name="basics"></a>
@@ -20,6 +24,15 @@ Processing uses functions to create visuals.
 ###### Stroke
 
 Outline of a shape
+stroke can set the color or set the with of the line.
+
+Syntax:
+
+	strokeWeight(weight);
+
+weight: float the weight of the stroke
+
+Return type: void
 
 ###### Fill
 
@@ -31,9 +44,34 @@ Anything inside of stroke.
 
 * To color a shape, call color function before the defining the shape.
 
-<a name="function"></a>
+### Setup and Draw
 
-## Function 
+#### Setup
+
+It happens only once at the beginnig of the sketch.
+
+Syntax:
+
+	void setup(){
+	}
+
+* Set the size of canvas
+
+#### Draw
+
+It loops.
+
+Syntax:
+
+	void draw(){
+	}
+
+* Don't forget to include background(); in the draw function to refresh the background. Otherwise it'll keep drawing new shapes on top.
+
+
+<a name="shape"></a>
+
+## Shape
 [Top](#top)
 
 ###### Rectangle
@@ -94,6 +132,114 @@ d: float height (diameter)
 Return type: void
 
 ![Ellipse](./images/ellipse1.png) ellipse(56, 46, 55, 55);
+
+
+###### line
+
+Syntax:
+
+	line(x1, y1, x2, y2);
+	line(x1, y1, z1, x2, y2, z2);
+
+x1: float 1st x-coordinate
+
+y1: float 1st y-coordinate
+
+x2: float 2nd x-coordinate
+
+y2: float 2nd y-coordinate
+
+z1: float 1st z-coordinate
+
+z2: float 2nd z-coordinate
+
+![Line1](./images/line1.png) line(30, 20, 85, 75)
+
+![Line2](./images/line2.png) line(30, 20, 85, 20); stroke(126); line(85, 20, 85, 75);
+stroke(255); line(85, 75, 30, 75);
+
+![Line3](./images/line3.png) // Drawing lines in 3D requires P3D // as a parameter to size() size(100, 100, P3D); line(30, 20, 0, 85, 20, 15); stroke(126); line(85, 20, 15, 85, 75, 0); stroke(255); line(85, 75, 0, 30, 75, -50);
+
+
+<a name="function"></a>
+
+## Function 
+[Top](#top)
+
+###### SelectInput
+
+It lets user to open a new window and browse the file to select a file to use.
+
+Example:
+
+	void setup(){
+		selectInput("Select a file to process:", "fileSelected");
+	}
+
+	void fileSelected(File selection){
+		if(selection == null){
+			println("Window was closed or the user hit cancel.");
+		} else{
+			println("User selected " + selection.getAbsolutePath());
+		}
+	}
+
+Syntax:
+
+	selectInput(prompt, callback);
+	selectInput(prompt, callback, file);
+	selectInput(prompt, callback, file, callbackObject);
+	selectInput(prompt, callback, file, callbackObject, parent, sketch);
+	selectInput(prompt, callback, file, callbackObject, parent);
+
+prompt: string a message to dislpay
+callback: string name of the method for the selection
+
+Return type: void
+
+
+
+###### loadStrings
+
+It reads the contents of a file and creates a string array of individual lines in the file.
+
+Examples:
+		
+	String[] lines = loadStrings("list.txt");
+	println("there are " + lines.length + " lines");
+	for (int i = 0 ; i < lines.length; i++) {
+	  println(lines[i]);
+	}
+
+Syntax:
+
+	loadStrings(filename);
+	loadStrings(reader);
+
+filename: string name of the file or URL
+
+Return type: String()
+
+###### split
+
+This function breaks a string into pieces by the given character or string as a delimiter.
+
+Exaples:
+
+		
+	String men = "Chernenko,Andropov,Brezhnev";
+	String[] list = split(men, ',');
+	// list[0] is now "Chernenko", list[1] is "Andropov"...
+
+Syntax:
+
+	split(value, delim);
+
+value: string the string to be split
+delim: char the character or string to separate the string
+
+Return type: string[]
+
 
 <a name="color"></a>
 
@@ -214,3 +360,14 @@ Syntax:
 image: PImage for the background (must be the same size as the sketch window)
 
 ![Color7](./images/color7.png) PImage img; img = loadImage("laDefence.jpg"); background(img);
+
+
+<a name="array"></a>
+
+## Array
+[Top](#top)
+
+To find the length of the array
+
+	arr.length
+
