@@ -2,22 +2,40 @@
 # Processing Notes
 
 ### [Processing Basics](#basics)
+### [Function](#function)
 
 
 <a name="basics">
-### ------------------------------------------------------------
+------------------------------------------------------------
 
-# Processing Basics
+## Processing Basics
 </a>
-### ------------------------------------------------------------
+------------------------------------------------------------
 
 Processing uses functions to create visuals.
 
+### Terminology
+
+###### Stroke
+
+Outline of a shape
+
+###### Fill
+
+Anything inside of stroke.
+
 ### Rules
 
-When there are multiple codes, first code will be dislpayed on the bottom, later codes will be displayed on top of the previous ones.
+* When there are multiple codes, first code will be dislpayed on the bottom, later codes will be displayed on top of the previous ones.
 
-### Function
+* To color a shape, call color function before the defining the shape.
+
+<a name="function">
+------------------------------------------------------------
+
+## Function
+</a>
+------------------------------------------------------------
 
 ###### Rectangle
 
