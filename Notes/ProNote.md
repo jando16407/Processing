@@ -3,11 +3,13 @@
 
 ### [Processing Basics](#basics)
 ### [Function](#function)
+### [Color](#color)
 
 
 <a name="basics"></a>
 
-## Processing Basics
+## Processing Basics 
+[Top](#top)
 
 Processing uses functions to create visuals.
 
@@ -29,7 +31,8 @@ Anything inside of stroke.
 
 <a name="function"></a>
 
-## Function
+## Function 
+[Top](#top)
 
 ###### Rectangle
 
@@ -89,3 +92,41 @@ d: float height (diameter)
 Return type: void
 
 ![Ellipse](./images/ellipse1.png) ellipse(56, 46, 55, 55);
+
+<a name="color"></a>
+
+## Color
+[Top](#top)
+
+###### Outline color
+
+Syntax:
+
+	stroke(rgb);
+	stroke(gray);
+
+rgb: int rgb in hexadecial
+
+gray: float a value between black adn white (0 = black, 255 = white)
+
+![Color1](./images/color1.png) stroke(153); rect(30, 20, 55, 55);
+
+Syntax:
+
+	stroke(rgb, alpha);
+	stroke(gray, alpha);
+
+alpha: float opacity of the outline
+
+Syntax:
+
+	stroke(v1, v2, v3);
+	stroke(v1, v2, v3, alpha);
+
+v1: float red or hue value
+
+v2: float green or saturation value
+
+v3: float blue or brightness value
+
+![Color2](./images/color2.png) stroke(204, 102, 0); rect(30, 20, 55, 55);
