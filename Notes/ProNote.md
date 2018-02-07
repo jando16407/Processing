@@ -17,12 +17,9 @@
 ## Processing Basics 
 [Top](#top)
 
-Processing uses functions to create visuals.
-
-### Terminology
-
-##### Stroke
-
+Processing uses functions to create visuals.  
+### Terminology  
+#### Stroke    
 Outline of a shape
 stroke can set the color or set the with of the line.
 
@@ -34,7 +31,7 @@ weight: float the weight of the stroke
 
 Return type: void
 
-##### Fill
+#### Fill
 
 Anything inside of stroke.
 
