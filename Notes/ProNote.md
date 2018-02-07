@@ -13,6 +13,8 @@
 
 [Map](#map)
 
+[Table](#table)
+
 <a name="basics"></a>
 
 ## Processing Basics 
@@ -336,3 +338,46 @@ stop1: float upper bound of the value's current range
 start2: float lower bound of the value's target range  
 stop2: float upper bound of the value's target range  
 Return type: float
+
+<a name="table"></a>
+
+## Table
+[Top](#top)
+
+#### getFloat()
+
+It return a float value from the table's specified row and column.
+
+Syntax:
+
+	.getFloat(row, column)
+	.getFloat(row, columnName)
+
+row: int ID number of the row to reference
+column: int ID number of the column to reference
+columnName: String title of the column to reference
+Return type: float
+
+Example:
+
+	Table table;
+
+	void setup() {
+
+	  table = new Table();
+	  
+	  table.addColumn("number", Table.INT);
+	  table.addColumn("mass", Table.FLOAT);
+	  table.addColumn("name", Table.STRING);
+	  
+	  table.addRow();  // Creates an empty row
+	  
+	  table.setInt(0, "number", 8);
+	  table.setFloat(0, "mass", 15.9994);
+	  table.setString(0, "name", "Oxygen");
+	  
+	  println(table.getInt(0, "number"));   // Prints 8
+	  println(table.getFloat(0, "mass"));   // Prints 15.9994
+	  println(table.getString(0, "name"));  // Prints "Oxygen"
+	}
+
