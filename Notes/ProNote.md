@@ -317,3 +317,20 @@ To find the length of the array
 
 	arr.length
 
+<a name="map"></a>
+
+## Map
+[Top](#top)
+
+Re-maps a number from one range to another. It will convert the input number accoring to the given range as an output.
+
+Syntax:
+
+	map(value, start1, stop1, start2, stop2)
+
+value: float the incoming value to be converted  
+start1: float lower bound of the value's current range  
+stop1: float upper bound of the value's current range  
+start2: float lower bound of the value's target range  
+stop2: float upper bound of the value's target range  
+Return type: float
