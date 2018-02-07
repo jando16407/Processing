@@ -11,6 +11,7 @@
 
 [Array](#array)
 
+[Map](#map)
 
 <a name="basics"></a>
 
@@ -322,7 +323,8 @@ To find the length of the array
 ## Map
 [Top](#top)
 
-Re-maps a number from one range to another. It will convert the input number accoring to the given range as an output.
+Re-maps a number from one range to another  
+It will convert the input number accoring to the given range as an output.
 
 Syntax:
 
