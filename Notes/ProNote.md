@@ -7,6 +7,8 @@
 
 [Function](#function)
 
+[Draw Function](#draw_function)
+
 [Color](#color)
 
 [Array](#array)
@@ -134,6 +136,18 @@ stroke(255); line(85, 75, 30, 75);
 ![Line3](./images/line3.png) // Drawing lines in 3D requires P3D // as a parameter to size() size(100, 100, P3D); line(30, 20, 0, 85, 20, 15); stroke(126); line(85, 20, 15, 85, 75, 0); stroke(255); line(85, 75, 0, 30, 75, -50);
 
 
+#### Point (dot)
+
+Syntax:
+
+	point(x, y);
+	point(x, y, z);
+
+x: float x-coordinate of the point
+y: float y-coordinate of the point
+z: float z-coordinate of the point
+Return type: void
+
 <a name="function"></a>
 
 ## Function 
@@ -209,6 +223,23 @@ Syntax:
 value: string the string to be split  
 delim: char the character or string to separate the string  
 Return type: string[]
+
+<a name="draw_function"></a>
+
+## Draw Function
+[Top](#top)
+
+#### text()
+
+Syntax:
+
+	text(c, x, y);
+	text(str, x, y);
+
+c: char the alphanumeric character to be displayed  
+x: float x-coordinate  
+y: float y-coordinate  
+str: string
 
 
 <a name="color"></a>
