@@ -67,7 +67,7 @@ Syntax:
 ## Shape
 [Top](#top)
 
-##### Rectangle
+#### Rectangle
 
 Syntax: 
 
@@ -96,44 +96,33 @@ br: float radius for bottom-right
 bl: float radius for bottom-left  
 ![Rectangle3](./images/rect3.png) rect(30, 20, 55, 55, 3, 6, 12, 18);
 
-##### Ellipse
+#### Ellipse
 
 Syntax:
 
 	ellipse(a, b, c, d);
 
-a: float x-coordinate (center)
-
-b: float y-coordinate (center)
-
-c: float width (diameter)
-
-d: float height (diameter)
-
-Return type: void
-
+a: float x-coordinate (center)  
+b: float y-coordinate (center)  
+c: float width (diameter)  
+d: float height (diameter)  
+Return type: void  
 ![Ellipse](./images/ellipse1.png) ellipse(56, 46, 55, 55);
 
 
-##### line
+#### line
 
 Syntax:
 
 	line(x1, y1, x2, y2);
 	line(x1, y1, z1, x2, y2, z2);
 
-x1: float 1st x-coordinate
-
-y1: float 1st y-coordinate
-
-x2: float 2nd x-coordinate
-
-y2: float 2nd y-coordinate
-
-z1: float 1st z-coordinate
-
-z2: float 2nd z-coordinate
-
+x1: float 1st x-coordinate  
+y1: float 1st y-coordinate  
+x2: float 2nd x-coordinate  
+y2: float 2nd y-coordinate  
+z1: float 1st z-coordinate  
+z2: float 2nd z-coordinate  
 ![Line1](./images/line1.png) line(30, 20, 85, 75)
 
 ![Line2](./images/line2.png) line(30, 20, 85, 20); stroke(126); line(85, 20, 85, 75);
@@ -147,7 +136,7 @@ stroke(255); line(85, 75, 30, 75);
 ## Function 
 [Top](#top)
 
-##### SelectInput
+#### SelectInput
 
 It lets user to open a new window and browse the file to select a file to use.
 
@@ -173,14 +162,13 @@ Syntax:
 	selectInput(prompt, callback, file, callbackObject, parent, sketch);
 	selectInput(prompt, callback, file, callbackObject, parent);
 
-prompt: string a message to dislpay
-callback: string name of the method for the selection
-
+prompt: string a message to dislpay  
+callback: string name of the method for the selection  
 Return type: void
 
 
 
-##### loadStrings
+#### loadStrings
 
 It reads the contents of a file and creates a string array of individual lines in the file.
 
@@ -197,11 +185,10 @@ Syntax:
 	loadStrings(filename);
 	loadStrings(reader);
 
-filename: string name of the file or URL
+filename: string name of the file or URL  
+Return type: String()  
 
-Return type: String()
-
-##### split
+#### split
 
 This function breaks a string into pieces by the given character or string as a delimiter.
 
@@ -216,9 +203,8 @@ Syntax:
 
 	split(value, delim);
 
-value: string the string to be split
-delim: char the character or string to separate the string
-
+value: string the string to be split  
+delim: char the character or string to separate the string  
 Return type: string[]
 
 
@@ -227,19 +213,16 @@ Return type: string[]
 ## Color
 [Top](#top)
 
-##### Outline color
+#### Outline color
 
 Syntax:
 
 	stroke(rgb);
 	stroke(gray);
 
-rgb: int rgb in hexadecial
-
-gray: float a value between black adn white (0 = black, 255 = white)
-
-Return type: void
-
+rgb: int rgb in hexadecial  
+gray: float a value between black adn white (0 = black, 255 = white)  
+Return type: void  
 ![Color1](./images/color1.png) stroke(153); rect(30, 20, 55, 55);
 
 Syntax:
@@ -254,64 +237,51 @@ Syntax:
 	stroke(v1, v2, v3);
 	stroke(v1, v2, v3, alpha);
 
-v1: float red or hue value
-
-v2: float green or saturation value
-
-v3: float blue or brightness value
-
+v1: float red or hue value  
+v2: float green or saturation value  
+v3: float blue or brightness value  
 ![Color2](./images/color2.png) stroke(204, 102, 0); rect(30, 20, 55, 55);
 
 
-##### color inside of a shape
+#### color inside of a shape
 
 Syntax:
 
 	fill(rgb);
 	fill(gray);
 
-rgb: int rgb in hexadecial
-
-gray: float a value between black adn white (0 = black, 255 = white)
-
-Return type: void
-
-![Color3](./images/color3.png) fill(153); rect(30, 20, 55, 55);
+rgb: int rgb in hexadecial  
+gray: float a value between black adn white (0 = black, 255 = white)  
+Return type: void  
+![Color3](./images/color3.png) fill(153); rect(30, 20, 55, 55);  
 
 Syntax:
 
 	fill(rgb, alpha);
 	fill(gray, alpha);
 
-alpha: float opacity of the outline
-
+alpha: float opacity of the outline  
 Syntax:
 
 	fill(v1, v2, v3);
 	fill(v1, v2, v3, alpha);
 
-v1: float red or hue value
-
-v2: float green or saturation value
-
-v3: float blue or brightness value
-
-![Color4](./images/color4.png) fill(204, 102, 0); rect(30, 20, 55, 55);
+v1: float red or hue value  
+v2: float green or saturation value  
+v3: float blue or brightness value  
+![Color4](./images/color4.png) fill(204, 102, 0); rect(30, 20, 55, 55);  
 
 
-##### Background color
+#### Background color
 
 Syntax:
 
 	background(rgb);
 	background(gray);
 
-rgb: int rgb in hexadecial
-
-gray: float a value between black adn white (0 = black, 255 = white)
-
-Return type: void
-
+rgb: int rgb in hexadecial  
+gray: float a value between black adn white (0 = black, 255 = white)  
+Return type: void  
 ![Color5](./images/color5.png) background(51);
 
 Syntax:
@@ -319,27 +289,22 @@ Syntax:
 	background(rgb, alpha);
 	background(gray, alpha);
 
-alpha: float opacity of the outline
-
-Syntax:
+alpha: float opacity of the outline  
+Syntax:  
 
 	background(v1, v2, v3);
 	background(v1, v2, v3, alpha);
 
-v1: float red or hue value
-
-v2: float green or saturation value
-
-v3: float blue or brightness value
-
+v1: float red or hue value  
+v2: float green or saturation value  
+v3: float blue or brightness value  
 ![Color6](./images/color6.png) background(255, 204, 0);
 
 Syntax:
 
 	background(image);
 
-image: PImage for the background (must be the same size as the sketch window)
-
+image: PImage for the background (must be the same size as the sketch window)  
 ![Color7](./images/color7.png) PImage img; img = loadImage("laDefence.jpg"); background(img);
 
 
