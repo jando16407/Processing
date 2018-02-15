@@ -4,7 +4,8 @@
 [Processing Basics](#basics)  
 	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw)  
 
-[Shape](#shape)
+[Shape](#shape)  
+	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 [Function](#function)
 
