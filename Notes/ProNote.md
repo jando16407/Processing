@@ -7,18 +7,18 @@
 [Shape](#shape)  
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
-[Function](#function)
+[Function](#function)  
+	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max)  
+[Draw Function](#draw_function)  
+	[text()](#text)  
+[Color](#color)  
+	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)
+[Array](#array)  
 
-[Draw Function](#draw_function)
+[Map](#map)  
 
-[Color](#color)
-
-[Array](#array)
-
-[Map](#map)
-
-[Table](#table)
-
+[Table](#table)  
+	[getFloat()](#getfloat), [getString()](#getstring)  
 <a name="basics"></a>
 
 ## Processing Basics 
@@ -298,7 +298,7 @@ v3: float blue or brightness value
 ![Color2](./images/color2.png) stroke(204, 102, 0); rect(30, 20, 55, 55);
 
 <a name="colorinside"></a>
-#### color inside of a shape
+#### Color inside of a shape
 
 Syntax:
 
