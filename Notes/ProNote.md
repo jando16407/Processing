@@ -77,8 +77,8 @@ Syntax:
 
 ## Shape
 [Top](#top)
-
-#### Rectangle
+<a name="rectangle"></a>
+#### Rectangle  
 
 Syntax: 
 
@@ -106,8 +106,8 @@ tr: float radius for top-right
 br: float radius for bottom-right  
 bl: float radius for bottom-left  
 ![Rectangle3](./images/rect3.png) rect(30, 20, 55, 55, 3, 6, 12, 18);
-
-#### Ellipse
+<a name="ellipse"></a>
+#### Ellipse  
 
 Syntax:
 
@@ -120,8 +120,8 @@ d: float height (diameter)
 Return type: void  
 ![Ellipse](./images/ellipse1.png) ellipse(56, 46, 55, 55);
 
-
-#### line
+<a name="line"></a>
+#### line  
 
 Syntax:
 
@@ -141,7 +141,7 @@ stroke(255); line(85, 75, 30, 75);
 
 ![Line3](./images/line3.png) // Drawing lines in 3D requires P3D // as a parameter to size() size(100, 100, P3D); line(30, 20, 0, 85, 20, 15); stroke(126); line(85, 20, 15, 85, 75, 0); stroke(255); line(85, 75, 0, 30, 75, -50);
 
-
+<a name="point"></a>
 #### Point (dot)
 
 Syntax:
