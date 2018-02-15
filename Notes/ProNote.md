@@ -24,7 +24,7 @@
 
 Processing uses functions to create visuals.  
 ### Terminology  
-#### Stroke    
+<a name="stroke">#### Stroke</a>    
 
 Outline of a shape
 stroke can set the color or set the with of the line.
@@ -36,17 +36,17 @@ Syntax:
 weight: float the weight of the stroke  
 Return type: void
 
-#### Fill
+<a name="fill">#### Fill</a>
 
 Anything inside of stroke.
 
-### Rules
+<a name="rules">### Rules</a>
 
 * When there are multiple codes, first code will be dislpayed on the bottom, later codes will be displayed on top of the previous ones.  
 * To color a shape, call color function before the defining the shape.
 
 ### Setup and Draw
-#### Setup
+<a name="setup">#### Setup</a>
 
 It happens only once at the beginnig of the sketch.  
 Syntax:
@@ -56,7 +56,7 @@ Syntax:
 
 * Set the size of canvas
 
-#### Draw
+<a name="draw">#### Draw</a>
 
 It loops.  
 Syntax:
@@ -223,6 +223,20 @@ Syntax:
 value: string the string to be split  
 delim: char the character or string to separate the string  
 Return type: string[]
+
+#### max()
+
+Syntax:
+
+	max(a, b);
+	max(a, b, c);
+	max(list);
+
+a: float or int first number to compare  
+b: float or int sencond number to compare 
+c: float or int thirs number to compare  
+list: float[] or int[] array of numbers to compare  
+
 
 <a name="draw_function"></a>
 
@@ -394,6 +408,43 @@ Example:
 	Table table;
 
 	void setup() {
+
+	  table = new Table();
+	  
+	  table.addColumn("number", Table.INT);
+	  table.addColumn("mass", Table.FLOAT);
+	  table.addColumn("name", Table.STRING);
+	  
+	  table.addRow();  // Creates an empty row
+	  
+	  table.setInt(0, "number", 8);
+	  table.setFloat(0, "mass", 15.9994);
+	  table.setString(0, "name", "Oxygen");
+	  
+	  println(table.getInt(0, "number"));   // Prints 8
+	  println(table.getFloat(0, "mass"));   // Prints 15.9994
+	  println(table.getString(0, "name"));  // Prints "Oxygen"
+	}
+
+#### getString()
+
+It returns a string from a table at specified row and column.  
+
+Syntax:
+
+	.getString(row, column);
+	.getString(row, columnName);
+
+row: int ID numeber of the row to reference  
+column: int ID number of the column to refrence  
+columnName: String title of the column to reference  
+Return type: String
+
+Example:
+
+Table table;
+
+void setup() {
 
 	  table = new Table();
 	  
