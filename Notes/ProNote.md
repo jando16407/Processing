@@ -24,7 +24,9 @@
 
 Processing uses functions to create visuals.  
 ### Terminology  
-<a name="stroke">#### Stroke</a>    
+<a name="stroke"></a>
+
+#### Stroke    
 
 Outline of a shape
 stroke can set the color or set the with of the line.
@@ -36,7 +38,8 @@ Syntax:
 weight: float the weight of the stroke  
 Return type: void
 
-<a name="fill">#### Fill</a>
+<a name="fill"></a>
+#### Fill
 
 Anything inside of stroke.
 
