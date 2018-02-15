@@ -9,10 +9,13 @@
 
 [Function](#function)  
 	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max)  
+
 [Draw Function](#draw_function)  
 	[text()](#text)  
+
 [Color](#color)  
-	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)
+	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)  
+
 [Array](#array)  
 
 [Map](#map)  
