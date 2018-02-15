@@ -159,8 +159,8 @@ Return type: void
 
 ## Function 
 [Top](#top)
-
-#### SelectInput
+<a name="selectinput"></a>
+#### SelectInput  
 
 It lets user to open a new window and browse the file to select a file to use.
 
@@ -191,8 +191,8 @@ callback: string name of the method for the selection
 Return type: void
 
 
-
-#### loadStrings
+<a name="loadstrings"></a>
+#### loadStrings  
 
 It reads the contents of a file and creates a string array of individual lines in the file.
 
@@ -211,7 +211,7 @@ Syntax:
 
 filename: string name of the file or URL  
 Return type: String()  
-
+<a name="split"></a>
 #### split
 
 This function breaks a string into pieces by the given character or string as a delimiter.
@@ -230,7 +230,7 @@ Syntax:
 value: string the string to be split  
 delim: char the character or string to separate the string  
 Return type: string[]
-
+<a name="max"></a>
 #### max()
 
 Syntax:
@@ -249,7 +249,7 @@ list: float[] or int[] array of numbers to compare
 
 ## Draw Function
 [Top](#top)
-
+<a name="text"></a>
 #### text()
 
 Syntax:
@@ -267,7 +267,7 @@ str: string
 
 ## Color
 [Top](#top)
-
+<a name="outlinecolor"></a>
 #### Outline color
 
 Syntax:
@@ -297,7 +297,7 @@ v2: float green or saturation value
 v3: float blue or brightness value  
 ![Color2](./images/color2.png) stroke(204, 102, 0); rect(30, 20, 55, 55);
 
-
+<a name="colorinside"></a>
 #### color inside of a shape
 
 Syntax:
@@ -326,7 +326,7 @@ v2: float green or saturation value
 v3: float blue or brightness value  
 ![Color4](./images/color4.png) fill(204, 102, 0); rect(30, 20, 55, 55);  
 
-
+<a name="backgroundcolor"></a>
 #### Background color
 
 Syntax:
@@ -395,7 +395,7 @@ Return type: float
 
 ## Table
 [Top](#top)
-
+<a name="getfloat"></a>
 #### getFloat()
 
 It return a float value from the table's specified row and column.
@@ -432,7 +432,7 @@ Example:
 	  println(table.getFloat(0, "mass"));   // Prints 15.9994
 	  println(table.getString(0, "name"));  // Prints "Oxygen"
 	}
-
+<a name="getsting"></a>
 #### getString()
 
 It returns a string from a table at specified row and column.  
