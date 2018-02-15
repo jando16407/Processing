@@ -2,6 +2,7 @@
 # Processing Notes
  
 [Processing Basics](#basics)
+	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw)  
 
 [Shape](#shape)
 
@@ -25,7 +26,6 @@
 Processing uses functions to create visuals.  
 ### Terminology  
 <a name="stroke"></a>
-
 #### Stroke    
 
 Outline of a shape
@@ -39,17 +39,19 @@ weight: float the weight of the stroke
 Return type: void
 
 <a name="fill"></a>
-#### Fill
+#### Fill  
 
 Anything inside of stroke.
 
-<a name="rules">### Rules</a>
+<a name="rules"></a>
+### Rules  
 
 * When there are multiple codes, first code will be dislpayed on the bottom, later codes will be displayed on top of the previous ones.  
 * To color a shape, call color function before the defining the shape.
 
 ### Setup and Draw
-<a name="setup">#### Setup</a>
+<a name="setup"></a>
+#### Setup  
 
 It happens only once at the beginnig of the sketch.  
 Syntax:
@@ -59,7 +61,8 @@ Syntax:
 
 * Set the size of canvas
 
-<a name="draw">#### Draw</a>
+<a name="draw"></a>
+#### Draw  
 
 It loops.  
 Syntax:
