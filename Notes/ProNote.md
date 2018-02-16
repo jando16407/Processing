@@ -476,7 +476,7 @@ void setup() {
 <a name="loadtable"></a>
 #### loadTable()   
 
-Read a contents of a file or URL and make a table of the data in a file ""data""  
+Read a contents of a file or URL and make a table of the data in a file "data"   
 
 Syntax:  
 
@@ -484,5 +484,5 @@ Syntax:
 	loadTable(filename, options)  
 
 filename: String name of a file in the data folder or a URL  
-options: String may contain ""header", ""tsv"", ""csv"", or ""bin"" separated by commas  
+options: String may contain "header", tsv, "csv", or "bin separated by commas  
 Return type: Table  
