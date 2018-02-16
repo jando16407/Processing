@@ -473,3 +473,16 @@ void setup() {
 	  println(table.getString(0, "name"));  // Prints "Oxygen"
 	}
 
+<a name="loadtable"></a>
+#### loadTable()   
+
+Read a contents of a file or URL and make a table of the data in a file ""data""  
+
+Syntax:  
+
+	loadTable(filename)  
+	loadTable(filename, options)  
+
+filename: String name of a file in the data folder or a URL  
+options: String may contain ""header", ""tsv"", ""csv"", or ""bin"" separated by commas  
+Return type: Table  
