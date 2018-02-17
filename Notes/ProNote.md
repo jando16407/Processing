@@ -22,6 +22,7 @@
 
 [Table](#table)  
 	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable)  
+
 <a name="basics"></a>
 
 ## Processing Basics 
@@ -492,3 +493,37 @@ Syntax:
 filename: String name of a file in the data folder or a URL  
 options: String may contain "header", "tsv", "csv", or "bin separated by commas  
 Return type: Table  
+
+<a name="getrowcount"></a>
+#### getRowCount()   
+
+It returns the toal number of rows in a table  
+
+Syntax:  
+
+	.getRowCount()
+
+Return type: int  
+
+<a name="getcolumncount"></a>
+#### getColumnCount()  
+
+It returns the total number of columns in a table.  
+
+Syntax:  
+
+	.getColumnCount()
+
+Return type: int  
+
+<a name="getcolumntitle"></a>
+#### getColumnTitle()  
+
+It returns the name for a column in a *TableRow* based on its ID  
+
+Syntax:  
+
+	.getColumnTitle(column)
+
+column: int ID number of the target column  
+Return type: String  
