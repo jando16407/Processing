@@ -8,7 +8,7 @@
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 [Function](#function)  
-	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max)  
+	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan)  
 
 [Draw Function](#draw_function)  
 	[text()](#text)  
@@ -21,7 +21,7 @@
 [Map](#map)  
 
 [Table](#table)  
-	[getFloat()](#getfloat), [getString()](#getstring)  
+	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable)  
 <a name="basics"></a>
 
 ## Processing Basics 
@@ -246,6 +246,12 @@ a: float or int first number to compare
 b: float or int sencond number to compare 
 c: float or int thirs number to compare  
 list: float[] or int[] array of numbers to compare  
+
+<a name="isnan"></a>  
+#### isNan()  
+
+isNan checks if a variable is Not a Number or not.  
+It will return *true* if the variable is NaN. False otherwise.  
 
 
 <a name="draw_function"></a>
@@ -484,5 +490,5 @@ Syntax:
 	loadTable(filename, options)  
 
 filename: String name of a file in the data folder or a URL  
-options: String may contain "header", tsv, "csv", or "bin separated by commas  
+options: String may contain "header", "tsv", "csv", or "bin separated by commas  
 Return type: Table  
