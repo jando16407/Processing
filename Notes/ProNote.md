@@ -2,7 +2,7 @@
 # Processing Notes
  
 [Processing Basics](#basics)  
-	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw)  
+	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v)    
 
 [Shape](#shape)  
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
@@ -76,6 +76,26 @@ Syntax:
 	}
 
 * Don't forget to include background(); in the draw function to refresh the background. Otherwise it'll keep drawing new shapes on top.
+
+<a name="mousepressed_v"></a>
+
+#### mousePressed  
+
+It's a variable. mousPressed variable stores whether or not a mouse button is currently being pressed.  
+The value is true when any mouse button is pressed, and false if no button is pressed.  
+
+Example:
+
+	// Click within the image to change 
+	// the value of the rectangle
+	void draw() {
+	  if (mousePressed == true) {
+	    fill(0);
+	  } else {
+	    fill(255);
+	  }
+	  rect(25, 25, 50, 50);
+	}
 
 
 <a name="shape"></a>
