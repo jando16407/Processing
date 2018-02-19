@@ -21,7 +21,7 @@
 [Map](#map)  
 
 [Table](#table)  
-	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable)  
+	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable), [getRowCount()](#getrowcount), [getColumnCount()](#getcolumncount), [getColumnTitle()](#getcolumntitle)  
 
 <a name="basics"></a>
 
@@ -254,6 +254,46 @@ list: float[] or int[] array of numbers to compare
 isNan checks if a variable is Not a Number or not.  
 It will return *true* if the variable is NaN. False otherwise.  
 
+<a name="nf"></a>
+#### nf()  
+
+It is a utility function for formatting numbers into strings.  
+Values should always be positive.  
+
+Syntax:  
+
+	nf(num)
+	nf(nums)
+	nf(nums, digits)
+	nf(num, digits)
+	nf(nums, left, right)
+	nf(num, left, right)
+
+nums: float[] or int[] the numbers to format  
+digits: int number of digits of pad with zero  
+num: float or int the number to format  
+left: int number of digit to the left of the decimal point  
+right: int number of digit to the right of the decimal point  
+Return type: String[]  
+
+Example:  
+
+	int a=200, b=40, c=90;
+	String sa = nf(a, 10);
+	println(sa);  // Prints "0000000200"
+	String sb = nf(b, 5);
+	println(sb);  // Prints "00040"
+	String sc = nf(c, 3);
+	println(sc);  // Prints "090"
+
+	float d = 200.94, e = 40.2, f = 9.012;
+	String sd = nf(d, 10, 4);
+	println(sd);  // Prints "0000000200.9400"
+	String se = nf(e, 5, 3);
+	println(se);  // Prints "00040.200"
+	String sf = nf(f, 3, 5);
+	println(sf);  // Prints "009.01200"
+  
 
 <a name="draw_function"></a>
 
@@ -461,7 +501,7 @@ Example:
 
 Table table;
 
-void setup() {
+	void setup() {
 
 	  table = new Table();
 	  
