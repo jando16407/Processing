@@ -8,7 +8,7 @@
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 [Function](#function)  
-	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf)  
+	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f)   
 
 [Draw Function](#draw_function)  
 	[text()](#text)  
@@ -314,6 +314,17 @@ Example:
 	String sf = nf(f, 3, 5);
 	println(sf);  // Prints "009.01200"
   
+<a name="mousepressed_f"></a>
+#### mousePressed()  
+
+This function is called once after every time a mouse button is pressed.  
+Syntax:  
+
+	mousePressed();
+	mousePressed(event);
+
+Return type: void
+
 
 <a name="draw_function"></a>
 
