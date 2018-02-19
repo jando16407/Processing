@@ -2,7 +2,7 @@
 # Processing Notes
  
 [Processing Basics](#basics)  
-	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v)    
+	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
 
 [Shape](#shape)  
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
@@ -96,6 +96,16 @@ Example:
 	  }
 	  rect(25, 25, 50, 50);
 	}
+
+<a name="mousex"></a>
+#### mouseX  
+
+The system variable mouseX always contains the current horizontal coordinate of the mouse.  
+
+<a name="mousey"></a>
+#### mouseY  
+
+The system variable mouseY always contains the current vertical coordinate of the mouse.  
 
 
 <a name="shape"></a>
