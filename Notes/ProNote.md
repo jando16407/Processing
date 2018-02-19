@@ -8,7 +8,7 @@
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 [Function](#function)  
-	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan)  
+	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf)  
 
 [Draw Function](#draw_function)  
 	[text()](#text)  
