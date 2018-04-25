@@ -8,20 +8,20 @@
 ***	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 <[Function](#function)>  
-	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f)   
+***	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f)   
 
 <[Draw Function](#draw_function)>  
-	[text()](#text)  
+***	[text()](#text), [textAlign()](#textalign)  
 
 <[Color](#color)>  
-	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)  
+***	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)  
 
 <[Array](#array)>   
 
 <[Map](#map)>  
 
 <[Table](#table)>  
-	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable), [getRowCount()](#getrowcount), [getColumnCount()](#getcolumncount), [getColumnTitle()](#getcolumntitle)  
+***	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable), [getRowCount()](#getrowcount), [getColumnCount()](#getcolumncount), [getColumnTitle()](#getcolumntitle)  
 
 <a name="basics"></a>
 
@@ -364,6 +364,17 @@ c: char the alphanumeric character to be displayed
 x: float x-coordinate  
 y: float y-coordinate  
 str: string
+
+<a name="textalign"></a>  
+#### textAlign()  
+
+Syntax:  
+
+	textAlign(alignX)  
+	textALlign(alignX, alignY)  
+
+alignX: int horizontal alignment, either LEFT, CENTER, or RIGHT  
+alignY: int vertical alignment, either TOP, BOTTOM, CENTER, or BASELINE  
 
 
 <a name="color"></a>
