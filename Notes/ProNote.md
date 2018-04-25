@@ -2,10 +2,10 @@
 # Processing Notes
  
 <[Processing Basics](#basics)>  
-	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
+***	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
 
 <[Shape](#shape)>  
-	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
+***	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 <[Function](#function)>  
 	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f)   
