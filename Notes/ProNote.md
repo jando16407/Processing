@@ -631,3 +631,78 @@ Syntax:
 
 column: int ID number of the target column  
 Return type: String  
+
+<a name="json"></a>
+
+## JSON
+
+<a name="jsonobject"></a>  
+#### JSONObject  
+
+A JSONObject stores JSON data with multiple name/value pairs.  
+Values can be numeric, Strings, booleans, other JSONObjects oor JSONArrays, or null.  
+JSONObject and JSONArray objects are quite similar and share most of the same methods; the primaru difference is that the latter stores an array of JSON objects, while the former represents a single JSON object.  
+
+	json = new JSONObject();  
+
+<a name="loadjsonobject"></a>  
+#### loadJSONObject()  
+
+It loads a JSON from the data folder or URL and return a JSONObject.  
+
+Syntax:  
+
+	loadJSONObject(filename)  
+	loadJSONObject(file)  
+
+filename: String name of a file in the data folder or a URL  
+
+<a name="parsejsonaray"></a>  
+#### parseJSONArray()  
+
+It will take a string, prases its contents, and return a JSONArray. If the string does not contain JSONArray data ot cannot be parsed, a null value is returned.  
+If the data already exists as a JSON file in the data folder, it is simpler to use loadJSONArray().  
+
+Syntaax:  
+
+	parseJSONArray(input)  
+
+input: String string to parse as a JSONArray  
+
+
+<a name="loadjsonarray"></a>  
+#### loadJSONArray()  
+
+It loads an array of JSON objects from the data folder and return a JSONArray.  
+
+Syntax:  
+
+	loadJSONArray(filename)  
+	loadJSONArray(file)  
+
+filename: String name of a file in he data folder or a URL  
+
+
+<a name="getjsonobject"></a>  
+#### getJSONObject()  
+
+It retrieves the JSONObject with the associated index value.  
+
+Syntax:  
+
+	.getJSONObject(index)  
+	.getJSONObject(index, defaultValue)  
+
+index: int the index value of the object to get  
+
+<a name="setjsonobject"></a>  
+#### setJSONObject()  
+
+It sets the value of the JSONObject with the index value.  
+
+Syntax:  
+
+	.setJSONObject(index, value)  
+
+index: int the index value to target  
+value: JSONObject the value to assign  
