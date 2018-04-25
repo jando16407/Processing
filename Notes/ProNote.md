@@ -23,6 +23,9 @@
 <[Table](#table)>  
 ***	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable), [getRowCount()](#getrowcount), [getColumnCount()](#getcolumncount), [getColumnTitle()](#getcolumntitle)  
 
+<[JSON](#json)>  
+*** [JSONObject](#jsonobject), [loadJSONObject()](#loadjsonobject), [parseJSONArray()](#parsejsonaray), [loadJSONArray()](#loadjsonarray), [getJSONObject()](#getjsonobject), [setJSONObject()](#setjsonobject)  
+
 <a name="basics"></a>
 
 ## Processing Basics 
