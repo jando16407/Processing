@@ -26,6 +26,9 @@
 <[JSON](#json)>  
 *** [JSONObject](#jsonobject), [loadJSONObject()](#loadjsonobject), [parseJSONArray()](#parsejsonaray), [loadJSONArray()](#loadjsonarray), [getJSONObject()](#getjsonobject), [setJSONObject()](#setjsonobject)  
 
+<[PVector](#pvector)>  
+*** [Set()](#pvecset), [random2D()](#pvecrandom2d), [random3D()](#pvecrandom3d), [fromAngle()](#pvecfromangle), [copy()](#pveccopy), [mag()](#pvecmag), [magsq()](#pvecmagsq)  
+
 <a name="basics"></a>
 
 ## Processing Basics 
@@ -638,7 +641,7 @@ Return type: String
 <a name="json"></a>
 
 ## JSON
-
+[Top](#top)
 <a name="jsonobject"></a>  
 #### JSONObject  
 
@@ -709,3 +712,107 @@ Syntax:
 
 index: int the index value to target  
 value: JSONObject the value to assign  
+
+<a name="pvector"></a>
+
+## PVector
+[Top](#top)
+
+A class to descrive a two or three dimentsional vector, specifically a Euclidean (also known as geometric) vector.  
+
+Fields include:  
+
+x: the x component of the vector  
+y: the y component of the vector  
+z: the z component of the vector  
+
+Methods include:  
+
+<a name="pvecset"></a>  
+#### set()  
+
+It sets the x, y, and z component of the vector.  
+
+Syntax:  
+
+	.set(x, y, z)  
+	.set(x, y)  
+	.set(v)  
+	.set(source)  
+
+x: float the x  
+y: float the y  
+z: float the z  
+v: PVector any variable of type PVector  
+source: float[] arrau to copy from  
+Return type: PVector  
+
+
+
+<a name="pvecrandom2d"></a>  
+#### random2D()  
+
+It return a new 2D unit vector with a random direction. It will use Papplet's random number generator.  
+
+Syntax:  
+
+	.random2D()  
+	.random2D(parent)  
+	.random2D(target)  
+	.random2D(target, parent)  
+
+parent: PApplet current PApplet instance  
+target: PVector the target vetctor (if null, a new vector will be created)  
+Return type: PVector  
+
+<a name="pvecrandom3d"></a>
+#### random3D()  
+
+Same as 2D but it's 3D.  
+
+<a name="pvecfromangle"></a>  
+#### from Angle()  
+
+It clculates and return a new 2D unit vecto from the specified angle value(in radians)  
+
+Syntax:  
+
+	.fromAngle(angle)  
+	.fromAngle(angle, target)  
+
+angle: float the angle in radians  
+target: PVector the target vector (if null, a new vector will be created)  
+Return type: PVector  
+
+<a name="pveccopy"></a>
+#### copy()  
+
+It copies the component of the vector.  
+
+Syntax:  
+
+	.copy()  
+
+Ex:  
+
+	v2 = v1.copy();  
+
+Return type: PVector  
+
+<a name="pvecmag"></a>  
+#### mag()  
+
+It returns the magnitutde(length) of the vector. Equation is simply sqrt(x*x+y*y+z*z).  
+
+Syntax:  
+
+	.mag()  
+
+Return type: float  
+
+<a name="pvecmagsq"></a>
+#### magSq()  
+calculated the magnitutde of the vector and it's squared. It's often used to improve performance since, unlike mag(), it does not require a sqrtt() operation.  
+
+Return tye: float  
+
