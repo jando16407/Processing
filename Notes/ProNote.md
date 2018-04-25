@@ -1,26 +1,26 @@
 <a name="top"></a>
 # Processing Notes
  
-[Processing Basics](#basics)  
+<[Processing Basics](#basics)>  
 	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
 
-[Shape](#shape)  
+<[Shape](#shape)>  
 	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
-[Function](#function)  
+<[Function](#function)>  
 	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f)   
 
-[Draw Function](#draw_function)  
+<[Draw Function](#draw_function)>  
 	[text()](#text)  
 
-[Color](#color)  
+<[Color](#color)>  
 	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)  
 
-[Array](#array)  
+<[Array](#array)>   
 
-[Map](#map)  
+<[Map](#map)>  
 
-[Table](#table)  
+<[Table](#table)>  
 	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable), [getRowCount()](#getrowcount), [getColumnCount()](#getcolumncount), [getColumnTitle()](#getcolumntitle)  
 
 <a name="basics"></a>
@@ -334,6 +334,18 @@ Syntax:
 	mousePressed(event);
 
 Return type: void
+
+<a name="sqrt"></a>
+#### sqrt()  
+
+It calculates the square room of a number.  
+
+Syntax:  
+
+	sqrt(n);
+
+n: float non-negative number  
+Return type: float  
 
 
 <a name="draw_function"></a>
