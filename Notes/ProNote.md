@@ -8,7 +8,7 @@
 ***	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
 
 <[Function](#function)>  
-***	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f)   
+***	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f), [sqrt()](#sqrt), [random()](#random)   
 
 <[Draw Function](#draw_function)>  
 ***	[text()](#text), [textAlign()](#textalign)  
@@ -17,8 +17,10 @@
 ***	[Outline color](#outlinecolor), [Color inside of a shape](#colorinside), [Background color](#backgroundcolor)  
 
 <[Array](#array)>   
+***  
 
 <[Map](#map)>  
+***  
 
 <[Table](#table)>  
 ***	[getFloat()](#getfloat), [getString()](#getstring), [loadTable()](#loadtable), [getRowCount()](#getrowcount), [getColumnCount()](#getcolumncount), [getColumnTitle()](#getcolumntitle)  
@@ -352,6 +354,23 @@ Syntax:
 
 n: float non-negative number  
 Return type: float  
+
+<a name="random"></a>
+#### random()  
+
+It generates random numbers. Each time the random() function is called, it return an enexpected vallue within the specified range.  
+If one parameter is passed, it will return a float between zero and the value of the high parameter.  
+ex) random(5) will return values between 0 and 5(not including 5)  
+
+Syntax:  
+
+	random(high)  
+	random(low, high)  
+
+low: float lower limit  
+high: float upper limit  
+Return type: float  
+
 
 
 <a name="draw_function"></a>
@@ -771,7 +790,7 @@ Return type: PVector
 Same as 2D but it's 3D.  
 
 <a name="pvecfromangle"></a>  
-#### from Angle()  
+#### fromAngle()  
 
 It clculates and return a new 2D unit vecto from the specified angle value(in radians)  
 
@@ -815,4 +834,47 @@ Return type: float
 calculated the magnitutde of the vector and it's squared. It's often used to improve performance since, unlike mag(), it does not require a sqrtt() operation.  
 
 Return tye: float  
+
+<a name="pvecsub"></a>  
+#### sub()  
+
+It subtracts x, y and z components from a vector, subtracts one vector from another, or subtracts two independendt vectors.   
+
+Syntax:  
+
+	.sub(v)  
+	.sub(x, y)  
+	.sub(x, y, z)  
+	.sub(v1, v2)  
+	.sub(v1, v2, target)  
+
+Example:  
+
+	v2.sub(v1);  
+	v.sub(40, 20, 0);  
+	PVector v3 = PVector.sub(v1, v2);  
+
+v: PVector any variable of type PVector  
+x: float the x component  
+y: float the y component   
+z: float the z component  
+v1: PVector the x, y and z components  
+v2: PVector theh x, y and z components  
+target: PVector PVector in which to store the result  
+Return type: PVector  
+
+<a name="pvecdist"></a>  
+#### dist()  
+
+It calculates the Euclidean distance between two points(cconsidering a point as a vecto object)  
+
+Syntax:  
+
+	.dist(v)  
+	.dist(v1, v2)  
+
+v: PVector the x, y, z coordinates of a PVector  
+v1: PVector any variable of type PVector  
+v2: PVector nay variable of type PVector  
+Return type: float  
 
