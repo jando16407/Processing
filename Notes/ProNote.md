@@ -2,7 +2,7 @@
 # Processing Notes
  
 <[Processing Basics](#basics)>  
-***	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
+***	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [frameRate()](#framerate), "[draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
 
 <[Shape](#shape)>  
 ***	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
@@ -73,6 +73,16 @@ Syntax:
 	}
 
 * Set the size of canvas
+
+<a name="framerate"></a>
+#### frameRate()  
+
+Specifies the number of frames to be displayed every second.  
+Syntax:    
+
+	frameRate(fps);
+
+fps: float number of desred frames per second  
 
 <a name="draw"></a>
 #### Draw  
@@ -196,6 +206,23 @@ x: float x-coordinate of the point
 y: float y-coordinate of the point
 z: float z-coordinate of the point
 Return type: void
+
+<a name="triangle"></a>  
+#### Triangle  
+
+Syntax:  
+
+	triangle(x1, y1, x2, y2, x3, y3);  
+
+x1: float x-coordinte of the first point  
+y1: float y-coordinte of the first point  
+x2: float x-coordinte of the second point  
+y2: float y-coordinte of the second point  
+x3: float x-coordinte of the third point  
+y3: float y-coordinte of the third point  
+Return type: void  
+![Triangle](./images/triangle.png) triangle(30,75, 58, 20, 86, 75);  
+
 
 <a name="function"></a>
 
