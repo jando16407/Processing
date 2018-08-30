@@ -5,7 +5,7 @@
 ***	[Stroke](#stroke), [Fill](#fill), [setup()](#setup), [frameRate()](#framerate), "[draw()](#draw), [mousePressed](#mousepressed_v), [mouseX](#mousex), [mouseY](#mousey)      
 
 <[Shape](#shape)>  
-***	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point)  
+***	[Rectangle](#rectangle), [Ellipse](#ellipse), [Line](#line), [Point(dot)](#point), [Triangle](#triangle)  
 
 <[Function](#function)>  
 ***	[selectinput()](#selectinput), [loadStrings()](#loadstrings), [split()](#split), [max()](#max), [isNaN()](#isnan), [nf()](#nf), [mousePressed()](#mousepressed_f), [sqrt()](#sqrt), [random()](#random)   
